@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $("#knop").click(function() {
+    var naam = $("#idTekstveld").val();
+    window.alert("Dag " + naam);
+    });
+    });
+    $(document).ready(function() {
+    $("#knop1").click(function() {
+    var beroep = $("#idTekstveld1").val();
+    window.alert("Wat een mooi beroep, " + beroep);
+    });
+    });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Wat is uw naam?
+        <input type="text" id="idTekstveld">
+        <input id="knop" name="knop" type="button"
+        value="Klik op deze knop">
+        Wat is uw beroep?
+        <input type="text" id="idTekstveld1">
+        <input id="knop1" name="knop1" type="button"
+        value="Klik op deze knop">
+        </form>
+        
+        
+        <noscript>
+        Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+        </noscript>
+</body>
+</html>
